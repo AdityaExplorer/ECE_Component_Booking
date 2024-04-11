@@ -1,0 +1,92 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Fix typo: 'border-box' instead of 'border: border-box;' */
+}
+
+.navbar {
+    height: 10vh;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    box-shadow: 8px 8px 10px 0 rgb(82, 60, 114);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 200px 0 200px;
+}
+
+.container {
+    margin: 50px auto;
+    max-width: 00px;
+    border: 1px solid #000;
+    padding: 20px;
+    text-align: center;
+}
+/* Cart Name */
+h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.bi {
+    
+    font-size: 36px; 
+    margin-bottom: 20px; 
+    color: #007bff; 
+}
+
+#cartItems {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#cartItems > div {
+    margin-bottom: 10px;
+}
+
+button {
+    
+    margin-left: 10px;
+}
+
+#totalAmount {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* cart.css for added items in the cart */
+
+/* Style for each cart item */
+#cartItems > div {
+    border-bottom: 1px solid #ccc;
+    padding: 10px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+/* Style for the delete button */
+#cartItems > div button {
+    background-color: red; 
+    color: white; 
+    border: none; 
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+/* Style for the product name */
+#cartItems > div .productName {
+    font-weight: bold; 
+    
+}
+
+/* Style for the product price */
+#cartItems > div .productPrice {
+    margin-left: 20px; 
+    font-size: 0.9em; 
+}

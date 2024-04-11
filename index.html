@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking_Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    
+    <nav class="navbar bg-primary" data-bs-theme="dark">
+        <a href="./index.html">Home</a>
+        <button id="go_to_Bok_section">Books</button>
+        <a href="./combos.html" >Combos</a>
+        <a href="./cart.html">
+          <i>Cart</i>
+        </a>
+    </nav>
+    <div class="Shop_Name Shop_content">
+        <i>Welcome to the Shop</i>
+    </div>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner " id="wdth">
+          <div class="carousel-item active">
+            <img src="https://m.media-amazon.com/images/I/61LG5t4dUDL._AC_UF1000,1000_QL80_.jpg" class="d-block w-100" alt="Raspberry_Image" style="height: 100vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="https://docs.arduino.cc/static/885e4c8887b8e87e2ec87b0f362ee659/a207c/ABX00005_featured_2.jpg" class="d-block w-100" alt="Arduino_Image" style="height: 100vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="https://quartzcomponents.com/cdn/shop/products/arduino-nano-2_1024x1024_1_1024x1024.jpg?v=1650521803" class="d-block w-100" alt="Arduino_Nano_Image" style="height: 100vh;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Content Here -->
+      <div class="Shop_content Shop_Name"  >
+        <i>Products</i></div>
+        <div class="content-section ">
+          <div class="box1 box ">
+              <div class="box1-content ">
+                  <h2>Arduino </h2> 
+                  <div class="box-img" style="background-image:url('https://4.bp.blogspot.com/-uSp3ovPtaIA/Vq6jJip1k9I/AAAAAAAAAqw/72S68l0WwuQ/s1600/47185-arduino.jpg') ;" ></div>
+                  <div class="buttons">
+                    <p id="pr2">Price: ₹950</p>
+                    <button onclick="addToCart('Arduino', 950)">Add to Cart</button><br>
+                    <button id="buyButton">
+                      <a href="./ArdBuy.html" id="buy">Buy Now</a>
+                    </button>
+                  </div>
+              </div>
+          </div>
+          <div class="box2 box">
+              <div class="box1-content">
+                  <h2>Arduino-Nano</h2> 
+                  <div class="box-img" style="background-image:url('https://www.electronicscomp.com/image/cache/catalog/arduino-nano-v3-board-400x400.jpg') ;" ></div>
+                  <div class="buttons">
+                    <p id="pr2"> Price: ₹450</p>
+                    <button onclick="addToCart('Arduno-Nano',450)">Add to Cart</button><br>
+                    <button id="buyButton">Buy Now</button>
+                  </div>
+              </div>
+          </div>
+          <div class="box3 box">
+            <div class="box1-content">
+                <h2>Drone Motor</h2> 
+                <div class="box-img" style="background-image:url('https://th.bing.com/th/id/OIP.J8zncnj3WZaVne0QUZ7gIwHaHa?rs=1&pid=ImgDetMain') ;" ></div>
+                <div class="buttons">
+                  <p id="pr2">Price: ₹350</p>
+                <button onclick="addToCart('Dorne',350)">Add to Cart</button><br>
+                <button id="buyButton">Buy Now</button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="box4 box">
+          <div class="box1-content">
+              <h2>Capicators</h2> 
+              <div class="box-img" style="background-image:url('https://th.bing.com/th/id/OIP.ru2lKpDIOsvQFmgzQhZBGQHaEU?rs=1&pid=ImgDetMain') ;" ></div>
+              <div class="buttons">
+                <p id="pr2">Price: ₹10</p>
+                <button onclick="addToCart('Capicators',10)">Add to Cart</button><br>
+                <button id="buyButton">Buy Now</button>
+              </div>
+          </div>
+      </div>
+      <div class="box5 box">
+        <div class="box1-content">
+            <h2>Raspberry Pi</h2> 
+            <div class="box-img" style="background-image:url('https://th.bing.com/th/id/R.789bedb8ca093aa5a85639806eb81308?rik=5tzT7y0j6mssFQ&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2fd%2fd2%2fRaspberry_Pi_Photo.jpg&ehk=W7Wy6vYEWhNssiJglNOz5iEB94E0yxTMhHk6nETX%2fkk%3d&risl=&pid=ImgRaw&r=0') ;" ></div>
+            <div class="buttons">
+                <p id="pr2">Price: ₹8000</p>
+                <button onclick="addToCart('Raspberry Pi',8000)">Add to Cart</button><br>
+                <button id="buyButton">Buy Now</button>
+            </div>
+        </div>
+    </div>
+  
+    <div class="box6 box">
+      <div class="box1-content">
+          <h2>Temperature Sensor</h2> 
+          <div class="box-img" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh3BYIj7KZeJWf2CT3tp11bHTlV2uSbm8PtxYEjisI2A&s') ;" ></div>
+          <div class="buttons">
+            <!-- <p id="pr2">Price: ₹30</p> -->
+            <button onclick="addToCart('Temperature Sensor',30)">Add to Cart</button><br>
+            <button id="buyButton">Buy Now</button>
+          </div>
+      </div>
+  </div>
+  <div class="box7 box">
+    <div class="box1-content">
+        <h2>LCD</h2> 
+        <div class="box-img" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSFHV5G7VdOnjhFBB4yASVNsD8LHG3YvRFVyJAGVJ_8Q&s') ;" ></div>
+        <div class="buttons">
+          <p id="pr2">Price: ₹250</p>
+          <button onclick="addToCart('LCD',250)">Add to Cart</button><br>
+          <button id="buyButton">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+<div class="box8 box">
+  <div class="box1-content">
+      <h2>Digital Multimeter</h2> 
+      <div class="box-img" style="background-image:url('https://th.bing.com/th/id/OIP.8wiPW-297C4mqgAtz2cdbQHaJ3?rs=1&pid=ImgDetMain') ;" ></div>
+      <div class="buttons">
+        <p id="pr2">Price: ₹200</p>
+        <button onclick="addToCart('Digitial Multimeter',200)">Add to Cart</button><br>
+        <button id="buyButton">Buy Now</button>
+      </div>
+  </div>
+</div>
+</div>   
+ <!-- Section for books Releated to The Box Content  -->
+ <marquee behavior="scroll" direction="left">     
+    <h1><i class="Shop_Name " id="book_sec">Books Releated to above Content</i></h1>
+  </marquee>  
+  <div class="content">
+    <div class="book_1">
+        <div class="image-container">
+            <img src="./Ard_BOOK.jpg" alt="" class="centerR_BOOK_images">
+            <p id="book_1_text">This book serves as a gateway for beginners, offering a clear and concise introduction to the world of Arduino, demystifying its concepts and empowering newcomers to grasp the fundamentals with ease.</p>
+        </div>
+        <div class="buttons" id="ARd_Book">
+            <p id="pr1">Price: ₹1599.00</p>
+            <button onclick="addToCart('Arduino Book for Beginners',1599.00)">Add to Cart</button><br>
+            <button id="buyButton">Buy Now</button>
+        </div>
+    </div>
+    
+</div>
+
+      <div class="book_text"> An essential resource for enthusiasts, makers, and professionals alike. Dive into the fascinating world of Arduino with
+         this comprehensive guide that covers everything from the basics of electronics to advanced project building techniques. Whether you're a beginner
+          eager to learn the fundamentals or an experienced developer seeking inspiration for your next project, this book has something for everyone.
+        Inside, you'll find step-by-step tutorials, practical examples, and insightful tips to help you master the art of Arduino programming and hardware
+         interfacing. Explore a wide range of topics, including sensor integration, data logging, wireless communication, and Internet of Things (IoT) applications.
+          With clear explanations and hands-on exercises, this book will empower you to unleash your creativity and turn your ideas into reality using Arduino.
+        Featuring contributions from leading experts in the field, this book is a must-have addition to any maker's library. Whether you're interested in building 
+        robots, home automation systems, or interactive art installations,the knowledge and skills gained from this book will serve as a valuable asset in your 
+        journey as a maker and innovator.Ready to take your Arduino skills to the next level? Order your copy of the Arduino book today and embark on a journey 
+        of discovery and innovation in the exciting world of electronics and DIY technology.</div>
+        
+    </div>
+    <div class="content">
+      <div class="book_1 _2">
+          <div class="image-container">
+              <img src="./Nano.jpeg" alt="" class="centerR_BOOK_images">
+              <p id="book_1_text">
+                This book serves as a gateway for beginners, offering a clear and
+                 concise introduction to the world of Arduino-Nano, demystifying its concepts
+                  and empowering newcomers to grasp the fundamentals with ease.</p>
+          
+            </div>
+          <div class="buttons" id="ARd_Book">
+              <p id="pr1">Price: ₹1299.00</p>
+              <button onclick="addToCart('Arduino Nano for Beginners',1299.00)">Add to Cart</button><br>
+              <button id="buyButton">Buy Now</button>
+          </div>
+      </div>
+      
+  </div>
+  
+        <div class="book_text"> Discover the Arduino Nano—a compact yet powerful microcontroller
+           board that offers unparalleled versatility for enthusiasts, makers, and professionals
+            alike. Delve into the captivating realm of Arduino Nano with this comprehensive guide,
+             covering everything from the basics of electronics to advanced project building techniques.
+              Whether you're a beginner eager to grasp the fundamentals or an experienced developer
+               seeking inspiration for your next endeavor, this book caters to all levels of expertise.
+                Inside, you'll uncover step-by-step tutorials, practical examples, and insightful tips
+                 to master Arduino Nano programming and hardware interfacing. Explore diverse topics such
+                  as sensor integration, data logging, wireless communication, and Internet of Things (IoT)
+                   applications. With its clear explanations and hands-on exercises, this book empowers you
+                    to unleash your creativity and bring your ideas to life using Arduino Nano. Featuring
+                     contributions from leading experts in the field, this book is an indispensable addition
+                      to any maker's toolkit. Whether you're intrigued by robotics, home automation systems, or
+                       interactive art installations, the knowledge gained from this book will fuel your journey
+                        as a maker and innovator. Ready to elevate your Arduino Nano skills? Order your copy of
+                         the Arduino Nano book today and embark on a voyage of discovery and innovation in the
+                          thrilling world of electronics and DIY technology.
+        </div>
+          
+      </div>
+      <div class="content"></div>
+      <div class="book_1 _3">
+        <div class="image-container">
+            <img src="./rashbeery.jpeg" alt="" class="centerR_BOOK_images">
+            <p id="book_1_text">
+              This book serves as a gateway for beginners, offering a clear
+               and concise introduction to the world of Raspberry
+               Pi, demystifying its concepts and empowering newcomers to
+                grasp the fundamentals with ease.</p>
+        </div>
+        <div class="buttons" id="ARd_Book">
+            <p id="pr1">Price: ₹3300.00</p>
+            <button onclick="addToCart('Rashbeery Pi Book ',3300.00)">Add to Cart</button><br>
+            <button id="buyButton">Buy Now</button>
+        </div>
+    </div>
+    
+</div>
+
+      <div class="book_text"> Discover the transformative potential of Raspberry
+         Pi on our website. Dive into the realm of innovation and creativity with
+          this versatile and affordable single-board computer. From tinkering with
+           electronics to building interactive projects and learning coding, Raspberry
+            Pi opens up a world of possibilities for enthusiasts, educators, and hobbyists
+             alike. With its user-friendly interface and robust community support, Raspberry
+              Pi empowers users to explore diverse applications, ranging from home
+               automation and robotics to media centers and retro gaming consoles. 
+               Whether you're a novice eager to embark on your coding journey or an
+                experienced maker looking to push the boundaries of technology, Raspberry Pi
+                 offers endless opportunities for experimentation and learning. 
+        Join us as we explore the fascinating world of Raspberry Pi and unlock its
+         full potential on our website.</div>
+        
+    </div>
+  </div>
+  
+          
+<footer class="footer-content bg-primary">
+  <div style="text-align: center;">
+    <marquee behavior="alternative" direction="up" onmouseover="stop">
+      <i class="ft">Made by love <i class="bi bi-chat-heart"></i></i>
+    </marquee>
+  </div>
+</footer>
+
+      
+  </div>
+  
+
+ 
+  <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+</body>
+</html>
