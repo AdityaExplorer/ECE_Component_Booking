@@ -6,7 +6,7 @@
 
 .navbar {
     height: 10vh;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: center;
     align-items: center;
     box-shadow: 8px 8px 10px 0 rgb(82, 60, 114);
@@ -35,7 +35,7 @@
 }
 
 .container {
-    width: calc(50% - 20px); /* Each container takes up 50% of the available width minus the margin */
+    width: calc(50% - 20px); 
     margin-bottom: 20px;
     box-sizing: border-box;
     border: 2px solid black;
@@ -143,49 +143,48 @@
 /* Media Queries */
 
 @media screen and (max-width: 480px) {
-    /* Adjust styles for screens up to 480px width (e.g., mobile devices) */
+    
     .text {
-        font-size: 24px; /* Decrease font size further for smaller screens */
+        font-size: 24px; 
     }
 
     .container {
-        width: calc(100% - 20px); /* Full width with smaller margin for containers on smaller screens */
+        width: calc(100% - 20px);
     }
 }
 @media screen and (max-width: 768px) {
-    /* Adjust styles for screens up to 768px width (e.g., tablets and laptops) */
+   
     .combo-section .component-name {
-        font-size: 24px; /* Decrease font size further for smaller screens */
+        font-size: 24px;
     }
 
     .combo-section .plus-sign {
-        font-size: 24px; /* Decrease font size further for smaller screens */
+        font-size: 24px; 
     }
 
     .price {
-        font-size: 20px; /* Decrease font size further for smaller screens */
+        font-size: 20px; 
     }
 
     .buttons button {
-        font-size: 12px; /* Decrease font size further for smaller screens */
+        font-size: 12px; 
     }
 }
 
 @media screen and (max-width: 480px) {
-    /* Adjust styles for screens up to 480px width (e.g., mobile devices) */
     .combo-section .component-name {
-        font-size: 20px; /* Decrease font size further for smaller screens */
+        font-size: 20px;
     }
 
     .combo-section .plus-sign {
-        font-size: 20px; /* Decrease font size further for smaller screens */
+        font-size: 20px; 
     }
 
     .price {
-        font-size: 18px; /* Decrease font size further for smaller screens */
+        font-size: 18px; 
     }
 
     .buttons button {
-        font-size: 10px; /* Decrease font size further for smaller screens */
+        font-size: 10px; 
     }
 }

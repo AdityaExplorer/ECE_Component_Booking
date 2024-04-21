@@ -24,3 +24,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
   };
   
+
+//   const buttons = document.querySelectorAll(".buttons")
+
+//   buttons.forEach((button)=>{
+//    button.addEventListener("click",(e)=>{
+//     // console.log(e.target.parentNode.childNodes[1].innerHTML.split(":")[1])
+//     console.log(e.target)
+//    })
+//   })
