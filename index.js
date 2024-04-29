@@ -23,7 +23,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   };
-  
+    
+
+  const buyBtns = document.querySelectorAll('#buyButton');
+
+buyBtns.forEach(function(buyBtn) {
+  buyBtn.addEventListener('click', function() {
+    window.location.href = 'cart.html';
+  });
+});
+
 
 //   const buttons = document.querySelectorAll(".buttons")
 
