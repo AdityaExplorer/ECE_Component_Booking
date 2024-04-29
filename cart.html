@@ -116,6 +116,8 @@ async function buy(e){
                 }else{
                     alert(res.message)
                 }
+            //  localStorage.removeItem('cart')
+            localStorage.setItem('cart',[])
              localStorage.removeItem('cart')
 
             }catch(e){

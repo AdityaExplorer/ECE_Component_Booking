@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
   };
     
 
-  const buyBtns = document.querySelectorAll('#buyButton');
+  let  buyBtns = document.querySelectorAll('#buyButton');
 
 buyBtns.forEach(function(buyBtn) {
   buyBtn.addEventListener('click', function() {
