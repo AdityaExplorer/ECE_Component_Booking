@@ -10,6 +10,12 @@
     text-align: center;
     align-items: center;
     box-shadow: 8px 8px 10px 0 rgb(82, 60, 114);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    
 }
 
 .navbar a {
@@ -17,11 +23,12 @@
     color: white;
 }
 
-#carouselExample {
+/* #carouselExample {
     
     max-width: fit-content;
     background-size: contain;
-}
+} */
+
 /* Navbar button */
 #go_to_Bok_section{
     color: white;
@@ -31,6 +38,7 @@
 
 /* Welcome to the shop Styling */
 .Shop_Name {
+    
     font-size: 60px;
     text-align: center;
     padding: 20px;
@@ -50,13 +58,13 @@
 .Shop_content {
         font-size: 20px;
         padding: 10px; 
-        margin-top: 10px; 
+        margin-top: 50px; 
 }
 }
 /* Background Image for Shop Name and Content */
 .Shop_Name,
 .Shop_content {
-   
+    margin-top: 50px;
     background-color: transparent;
     font-size: 60px; 
     font-weight: 30px;
@@ -116,10 +124,15 @@
     display: flex;
     margin-top: 10px;
     background-color: #007185;
-    height: 5rem;
+    height: 3rem;
     justify-content: center;
     align-items: center;
     color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .footer-content .ft {
@@ -133,14 +146,17 @@
 }
 
 .buttons button {
-    margin: 0 10px;  
-    padding: 10px 20px;
+    margin: 0 5px;  
+    padding: 5px 10px;
     border: none;
     cursor: pointer;
     background-color: #007bff;
     color: #fff;
     border-radius: 5px;
     font-size: 16px;
+}
+.buttons p{
+    font-size: 16px ;
 }
    
 
@@ -204,9 +220,7 @@
 }
 
 /* For Centering all the images */
-.content{
-    border: 2px solid black;
-}
+
 .image-container {
     display: flex;
     flex-direction: column;
@@ -264,11 +278,7 @@
     margin: 5vh;
 }
 
-#pr1{
-    font-size: 40px;
-}
-#pr2{
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
+/* For image slider */
+.slider img{
+    height: 30rem;
 }

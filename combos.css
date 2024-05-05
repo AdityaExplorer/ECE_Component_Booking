@@ -6,13 +6,19 @@
 
 .navbar {
     height: 10vh;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
     align-items: center;
     box-shadow: 8px 8px 10px 0 rgb(82, 60, 114);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
 }
 
 .navbar a {
+    width: 30%;
     text-decoration: none;
     color: white;
 }
@@ -124,10 +130,15 @@
     display: flex;
     margin-top: 10px;
     background-color: #007185;
-    height: 5rem;
+    height: 3rem;
     justify-content: center;
     align-items: center;
     color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
 }
 .footer-content .ft{
    font-size: 30px;

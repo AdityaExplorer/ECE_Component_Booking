@@ -14,6 +14,7 @@
 }
 
 .navbar a {
+    width: 33%;
     text-decoration: none;
     color: white;
 }
@@ -129,4 +130,11 @@ button {
         font-size: 20px;
     }
     
+}
+.buyNow{
+    border: none;
+    max-width: 100px;
+    background-color: #007bff;
+    border-radius: 10px;
+    color: white;
 }

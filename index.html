@@ -23,27 +23,45 @@
     <div class="Shop_Name Shop_content">
         <i>Welcome to the Shop</i>
     </div>
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner " id="wdth">
-          <div class="carousel-item active">
-            <img src="https://m.media-amazon.com/images/I/61LG5t4dUDL._AC_UF1000,1000_QL80_.jpg" class="d-block w-100" alt="Raspberry_Image" style="height: 100vh;">
-          </div>
-          <div class="carousel-item">
-            <img src="https://docs.arduino.cc/static/885e4c8887b8e87e2ec87b0f362ee659/a207c/ABX00005_featured_2.jpg" class="d-block w-100" alt="Arduino_Image" style="height: 100vh;">
-          </div>
-          <div class="carousel-item">
-            <img src="https://quartzcomponents.com/cdn/shop/products/arduino-nano-2_1024x1024_1_1024x1024.jpg?v=1650521803" class="d-block w-100" alt="Arduino_Nano_Image" style="height: 100vh;">
+  <div class="slider">  
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="https://c4.wallpaperflare.com/wallpaper/423/509/173/digital-art-eyes-artwork-robot-wallpaper-preview.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="text-center mb-4">Find the Perfect Electronic Components for Your Projects</h2>
+            
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="https://c4.wallpaperflare.com/wallpaper/432/619/701/motherboards-computer-tilt-shift-pcb-wallpaper-preview.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="text-center mb-4">Explore Our Wide Range of Electronic Components</h2>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://c4.wallpaperflare.com/wallpaper/618/108/910/macro-blue-chip-color-wallpaper-preview.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>  
       <!-- Content Here -->
       <div class="Shop_content Shop_Name"  >
         <i>Products</i></div>
@@ -53,7 +71,7 @@
                   <h2>Arduino </h2> 
                   <div class="box-img" style="background-image:url('https://4.bp.blogspot.com/-uSp3ovPtaIA/Vq6jJip1k9I/AAAAAAAAAqw/72S68l0WwuQ/s1600/47185-arduino.jpg') ;" ></div>
                   <div class="buttons">
-                    <p id="pr2">Price: ₹950</p>
+                    <p >Price: ₹950</p>
                     <button onclick="addToCart('Arduino', 950)">Add to Cart</button><br>
                     <button id="buyButton">
                       <a href="./ArdBuy.html" id="buy">Buy Now</a>
@@ -66,7 +84,7 @@
                   <h2>Arduino-Nano</h2> 
                   <div class="box-img" style="background-image:url('https://www.electronicscomp.com/image/cache/catalog/arduino-nano-v3-board-400x400.jpg') ;" ></div>
                   <div class="buttons">
-                    <p id="pr2"> Price: ₹450</p>
+                    <p > Price: ₹450</p>
                     <button onclick="addToCart('Arduno-Nano',450)">Add to Cart</button><br>
                     <button id="buyButton">Buy Now</button>
                   </div>
@@ -77,7 +95,7 @@
                 <h2>Drone Motor</h2> 
                 <div class="box-img" style="background-image:url('https://th.bing.com/th/id/OIP.J8zncnj3WZaVne0QUZ7gIwHaHa?rs=1&pid=ImgDetMain') ;" ></div>
                 <div class="buttons">
-                  <p id="pr2">Price: ₹350</p>
+                  <p>Price: ₹350</p>
                 <button onclick="addToCart('Dorne',350)">Add to Cart</button><br>
                 <button id="buyButton">Buy Now</button>
                 </div>
@@ -89,7 +107,7 @@
               <h2>Capicators</h2> 
               <div class="box-img" style="background-image:url('https://th.bing.com/th/id/OIP.ru2lKpDIOsvQFmgzQhZBGQHaEU?rs=1&pid=ImgDetMain') ;" ></div>
               <div class="buttons">
-                <p id="pr2">Price: ₹10</p>
+                <p>Price: ₹10</p>
                 <button onclick="addToCart('Capicators',10)">Add to Cart</button><br>
                 <button id="buyButton">Buy Now</button>
               </div>
@@ -100,7 +118,7 @@
             <h2>Raspberry Pi</h2> 
             <div class="box-img" style="background-image:url('https://th.bing.com/th/id/R.789bedb8ca093aa5a85639806eb81308?rik=5tzT7y0j6mssFQ&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2fd%2fd2%2fRaspberry_Pi_Photo.jpg&ehk=W7Wy6vYEWhNssiJglNOz5iEB94E0yxTMhHk6nETX%2fkk%3d&risl=&pid=ImgRaw&r=0') ;" ></div>
             <div class="buttons">
-                <p id="pr2">Price: ₹8000</p>
+                <p>Price:8000</p>
                 <button onclick="addToCart('Raspberry Pi',8000)">Add to Cart</button><br>
                 <button id="buyButton">Buy Now</button>
             </div>
@@ -112,7 +130,7 @@
           <h2>Temperature Sensor</h2> 
           <div class="box-img" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh3BYIj7KZeJWf2CT3tp11bHTlV2uSbm8PtxYEjisI2A&s') ;" ></div>
           <div class="buttons">
-            <!-- <p id="pr2">Price: ₹30</p> -->
+            <p>Price:30</p>
             <button onclick="addToCart('Temperature Sensor',30)">Add to Cart</button><br>
             <button id="buyButton">Buy Now</button>
           </div>
@@ -150,7 +168,8 @@
     <div class="book_1">
         <div class="image-container">
             <img src="./Ard_BOOK.jpg" alt="" class="centerR_BOOK_images">
-            <p id="book_1_text">This book serves as a gateway for beginners, offering a clear and concise introduction to the world of Arduino, demystifying its concepts and empowering newcomers to grasp the fundamentals with ease.</p>
+            <p id="book_1_text">Empower beginners with a concise introduction to
+               Arduino, demystifying concepts and facilitating easy grasp of fundamentals.</p>
         </div>
         <div class="buttons" id="ARd_Book">
             <p id="pr1">Price: ₹1599.00</p>
@@ -161,16 +180,11 @@
     
 </div>
 
-      <div class="book_text"> An essential resource for enthusiasts, makers, and professionals alike. Dive into the fascinating world of Arduino with
-         this comprehensive guide that covers everything from the basics of electronics to advanced project building techniques. Whether you're a beginner
-          eager to learn the fundamentals or an experienced developer seeking inspiration for your next project, this book has something for everyone.
-        Inside, you'll find step-by-step tutorials, practical examples, and insightful tips to help you master the art of Arduino programming and hardware
-         interfacing. Explore a wide range of topics, including sensor integration, data logging, wireless communication, and Internet of Things (IoT) applications.
-          With clear explanations and hands-on exercises, this book will empower you to unleash your creativity and turn your ideas into reality using Arduino.
-        Featuring contributions from leading experts in the field, this book is a must-have addition to any maker's library. Whether you're interested in building 
-        robots, home automation systems, or interactive art installations,the knowledge and skills gained from this book will serve as a valuable asset in your 
-        journey as a maker and innovator.Ready to take your Arduino skills to the next level? Order your copy of the Arduino book today and embark on a journey 
-        of discovery and innovation in the exciting world of electronics and DIY technology.</div>
+      <div class="book_text"> Discover the world of Arduino—from
+         basics to advanced techniques. With step-by-step tutorials
+          and practical examples, master Arduino programming and hardware
+           interfacing. Unleash your creativity with 
+        sensor integration, wireless communication, and IoT applications. Order now and elevate your DIY .</div>
         
     </div>
     <div class="content">
@@ -178,9 +192,7 @@
           <div class="image-container">
               <img src="./Nano.jpeg" alt="" class="centerR_BOOK_images">
               <p id="book_1_text">
-                This book serves as a gateway for beginners, offering a clear and
-                 concise introduction to the world of Arduino-Nano, demystifying its concepts
-                  and empowering newcomers to grasp the fundamentals with ease.</p>
+                Demystify Arduino-Nano for beginners with clarity, easing them into the fundamentals effortlessly..</p>
           
             </div>
           <div class="buttons" id="ARd_Book">
@@ -192,23 +204,9 @@
       
   </div>
   
-        <div class="book_text"> Discover the Arduino Nano—a compact yet powerful microcontroller
-           board that offers unparalleled versatility for enthusiasts, makers, and professionals
-            alike. Delve into the captivating realm of Arduino Nano with this comprehensive guide,
-             covering everything from the basics of electronics to advanced project building techniques.
-              Whether you're a beginner eager to grasp the fundamentals or an experienced developer
-               seeking inspiration for your next endeavor, this book caters to all levels of expertise.
-                Inside, you'll uncover step-by-step tutorials, practical examples, and insightful tips
-                 to master Arduino Nano programming and hardware interfacing. Explore diverse topics such
-                  as sensor integration, data logging, wireless communication, and Internet of Things (IoT)
-                   applications. With its clear explanations and hands-on exercises, this book empowers you
-                    to unleash your creativity and bring your ideas to life using Arduino Nano. Featuring
-                     contributions from leading experts in the field, this book is an indispensable addition
-                      to any maker's toolkit. Whether you're intrigued by robotics, home automation systems, or
-                       interactive art installations, the knowledge gained from this book will fuel your journey
-                        as a maker and innovator. Ready to elevate your Arduino Nano skills? Order your copy of
-                         the Arduino Nano book today and embark on a voyage of discovery and innovation in the
-                          thrilling world of electronics and DIY technology.
+        <div class="book_text"> Unleash creativity with Arduino Nano—explore tutorials,
+           examples, and tips for mastering programming and hardware. Featuring expert contributions, it's an 
+          essential resource for makers of all levels. Elevate your skills with the Arduino Nano book today!
         </div>
           
       </div>
@@ -217,10 +215,9 @@
         <div class="image-container">
             <img src="./rashbeery.jpeg" alt="" class="centerR_BOOK_images">
             <p id="book_1_text">
-              This book serves as a gateway for beginners, offering a clear
-               and concise introduction to the world of Raspberry
-               Pi, demystifying its concepts and empowering newcomers to
-                grasp the fundamentals with ease.</p>
+              Demystify Raspberry Pi for beginners, 
+              providing a clear and concise introduction
+               to empower easy understanding of its concepts.</p>
         </div>
         <div class="buttons" id="ARd_Book">
             <p id="pr1">Price: ₹3300.00</p>
@@ -231,19 +228,10 @@
     
 </div>
 
-      <div class="book_text"> Discover the transformative potential of Raspberry
-         Pi on our website. Dive into the realm of innovation and creativity with
-          this versatile and affordable single-board computer. From tinkering with
-           electronics to building interactive projects and learning coding, Raspberry
-            Pi opens up a world of possibilities for enthusiasts, educators, and hobbyists
-             alike. With its user-friendly interface and robust community support, Raspberry
-              Pi empowers users to explore diverse applications, ranging from home
-               automation and robotics to media centers and retro gaming consoles. 
-               Whether you're a novice eager to embark on your coding journey or an
-                experienced maker looking to push the boundaries of technology, Raspberry Pi
-                 offers endless opportunities for experimentation and learning. 
-        Join us as we explore the fascinating world of Raspberry Pi and unlock its
-         full potential on our website.</div>
+      <div class="book_text"> Explore the endless possibilities of Raspberry Pi
+         for tinkering, coding, and innovation. Join our website to dive into its
+          transformative potential and unlock a world of creativity. From home automation
+         to retro gaming, Raspberry Pi offers boundless opportunities for enthusiasts and makers alike.</div>
         
     </div>
   </div>
